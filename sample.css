@@ -1,0 +1,49 @@
+/* ✅ That's exactly what you need  */
+.menu > li {
+  border: 1px solid tomato;
+}
+
+a[title] {
+  color: teal;
+}
+
+/* Unusual curly brace formatting is ok */
+a[href="https://htmlreference.io"]
+{
+  color: teal;
+}
+
+a[href="https://cssreference.io"]
+{
+  color: orange;
+}
+
+a[href="https://www.youtube.com"]
+{
+  color: tomato;
+}
+
+/* Specificity - 0 0 0 1 */
+p {
+  color: green;
+}
+
+/* ✅ Specificity - 0 0 0 2 */
+article > p {
+  color: orange;
+}
+
+/* Specificity - 0 0 1 0 */
+.post-title {
+  color: green;
+}
+
+/* Specificity - 0 0 1 1 */
+.post > h1 {
+  color: red;
+}
+
+/* ✅ Specificity - 0 0 2 0 */
+.post > .post-title {
+  color: orange;
+}

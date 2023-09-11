@@ -1,0 +1,29 @@
+/* Using a sans serif font and increasing the size of the characters */
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+/* Shift the heading text to the left, by default it is centered */
+table caption {
+  text-align: center;
+}
+
+.schedule-body tr:hover {
+  background-color: aquamarine;
+  color: blue;
+}
+/* We "collapse" the frames of adjacent cells */
+.schedule {
+  border-collapse: collapse;
+}
+
+/* 
+  Add a border and padding to the cells, the distance from the content to the border.
+  To control the vertical position, the caption-side property is used.
+*/
+.schedule th,
+.schedule td {
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
